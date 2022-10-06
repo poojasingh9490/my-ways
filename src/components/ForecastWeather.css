@@ -1,0 +1,98 @@
+.main-card-1{
+    margin-left: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 95%;
+    background-color: white;
+    margin-top: 5%;
+}
+.card-header{
+    display: block;
+    position: relative;
+    padding: 16px;
+}
+.card-header-value{
+    font-size: 1.25rem;
+    flex-grow: 1;
+    color: black;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.value-forecast{
+    text-align: center;
+}
+
+.make-hour{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0 8px;
+}
+.make-hour-1{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    border-style: solid;
+    padding: 0 15px;
+    border-width: 0 1px 0 0;
+}
+.make-hour-2{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 400;
+    text-decoration: none;
+}
+.make-hour-3{
+    font-size: .875rem;
+    line-height: 1.66em;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-weight: 400;
+    color: #2b2b2b;
+    padding-bottom: 5px;
+}
+.make-hout-4{
+    font-size: 1.25rem;
+    color: #1b4de4;
+    font-weight: 400;
+    line-height: .83em;
+}
+.make-hour-5{
+    font-size: .75rem;
+    color: #2b2b2b;
+}
+.make-hour-6{
+    font-size: .75rem;
+    color: #2b2b2b;
+}
+.make-hour-7{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 16px 11px 11px;
+}
+.make-hour-8{
+    
+    border-radius: 16px;
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #1b4de4;
+    border: 1px solid #1b4de4;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1.15;
+    font-size: .8125rem;
+    font-weight: 700;
+    outline: none;
+    white-space: nowrap;
+    color: white;
+    margin-left: 55px;
+}

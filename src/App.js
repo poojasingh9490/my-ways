@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import ActualWeather from "./components/ActualWeather";
+import ForecastWeather from "./components/ForecastWeather";
+import TodayWeather from "./components/TodayWeather";
+import weather from "./weather.json";
 function App() {
+  // console.log(weather);
+  let data;
+  Object.entries(weather).map((el) => {
+    Object.entries(el).map((cur) => {
+      Object.entries(cur[1]).map((ele) => {
+        Object.entries(ele[1]).map((elee) => {
+          data = elee[1];
+        });
+      });
+    });
+  });
+  //console.log(data);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ActualWeather props={data} />
+      <ForecastWeather props={data} />
+      <TodayWeather props={data} />
     </div>
   );
 }
-
 export default App;
